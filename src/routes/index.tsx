@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState, type FormEvent } from "react";
+import bvaLogo from "@/assets/bva-logo.png";
 
 type Certificate = {
   certificateId: string;
@@ -63,10 +64,11 @@ function Index() {
       <main className="relative z-10 flex flex-1 items-center justify-center px-6 py-16">
         <div className="w-full max-w-xl">
           <div className="flex flex-col items-center text-center animate-fade-in-up">
-            {/* BVA Logo placeholder — replace src after upload */}
-            <div className="mb-8 flex h-20 w-20 items-center justify-center rounded-2xl border border-border bg-card glow-card">
-              <span className="text-2xl font-extrabold tracking-tight">BVA</span>
-            </div>
+            <img
+              src={bvaLogo}
+              alt="Bangalore Vibe Coders Association"
+              className="mb-10 h-16 w-auto sm:h-20"
+            />
 
             <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
               Certificate Verification
